@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Ribbons.Guide - Ribbon Tracking and Guidance</title>
+		<title>缎带之路丨宝可梦</title>
 		<meta name="description" content="Keep track of your Pokémon and their Ribbons using Ribbons.Guide!">
 		<link rel="shortcut icon" href="favicon.ico">
 		<!-- compatibility -->
@@ -55,7 +55,7 @@
 			<div class="container-fluid">
 				<h1 class="navbar-brand my-0 py-0">
 					<span class="ribbonsprite best-friends-ribbon align-middle me-1" role="img" aria-label="Logo"></span>
-					<span class="text-uppercase fw-bold align-middle">Ribbons.Guide</span>
+					<span class="text-uppercase fw-bold align-middle">缎带之路</span>
 				</h1>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -87,25 +87,25 @@
 							<li class="nav-item">
 								<button type="button" class="nav-link" id="headerNavDataLink">
 									<img src="img/ui/data.svg" alt="Data" class="align-text-bottom me-2 light-invert"><!--
-									--><span>Data</span>
+									--><span>数据备份</span>
 								</button>
 							</li>
 							<li class="nav-item">
 								<button type="button" class="nav-link" id="headerNavSettingsLink">
 									<img src="img/ui/settings.svg" alt="Settings" class="align-text-bottom me-2 light-invert"><!--
-									--><span>Settings</span>
+									--><span>设置</span>
 								</button>
 							</li>
 							<li class="nav-item">
 								<button type="button" class="nav-link" id="modalAboutViewChangelog">
 									<img src="img/ui/changelog.svg" alt="Changelog" class="align-text-bottom me-2 light-invert"><!--
-									--><span>Changelog</span>
+									--><span>更新日志</span>
 								</button>
 							</li>
 							<li class="nav-item">
 								<button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalAbout">
 									<img src="img/ui/info.svg" alt="About" class="align-text-bottom me-2 light-invert"><!--
-									--><span>About</span>
+									--><span>关于</span>
 								</button>
 							</li>
 							<li class="nav-item d-flex justify-content-evenly my-3 d-lg-none">
@@ -123,7 +123,7 @@
 			<div id="sectionTrackerButtonRow" class="d-flex justify-content-between mt-4 px-3">
 				<button id="sectionTrackerButtonAdd" class="btn btn-primary py-1 py-md-2 px-2 px-md-3 me-2 lh-1" type="button">
 					<img src="img/ui/add.svg" alt="Add">
-					<span class="align-middle d-none d-md-inline">Add New Pokémon</span>
+					<span class="align-middle d-none d-md-inline">添加宝可梦</span>
 				</button>
 				<div class="d-flex">
 					<div id="switchView" class="btn-group me-2" role="group" aria-label="Switch view">
@@ -134,11 +134,11 @@
 					</div>
 					<button class="btn btn-secondary py-1 py-md-2 px-2 px-md-3 me-2 lh-1" type="button" data-bs-toggle="modal" data-bs-target="#modalBoxes">
 						<img src="img/ui/box-closed.png" alt="Filter">
-						<span class="align-middle d-none d-md-inline">Boxes</span>
+						<span class="align-middle d-none d-md-inline">盒子</span>
 					</button>
 					<button class="btn btn-secondary py-1 py-md-2 px-2 px-md-3 me-2 lh-1 position-relative" type="button" data-bs-toggle="modal" data-bs-target="#modalFilterForm">
 						<img src="img/ui/filter.svg" alt="Filter">
-						<span class="align-middle d-none d-md-inline">Filters</span>
+						<span class="align-middle d-none d-md-inline">筛选</span>
 						<span id="sectionTrackerFilterCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
 							<span id="sectionTrackerFilterCount-num" class="align-middle">0</span>
 							<span class="visually-hidden">active filters</span>
@@ -155,22 +155,22 @@
 			<div class="modal-dialog modal-lg modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h2 class="modal-title fs-6 fw-bold" id="modalPokemonFormLabel">Add New Pokémon</h2>
+						<h2 class="modal-title fs-6 fw-bold" id="modalPokemonFormLabel">添加宝可梦</h2>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body p-0 pt-1">
 						<ul class="nav nav-tabs justify-content-center" id="pokemonFormTabs" role="tablist">
 							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="pokemonFormTabs-details" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-details" type="button" role="tab" aria-controls="pokemonFormSections-details" aria-selected="true">Details</button>
+								<button class="nav-link active" id="pokemonFormTabs-details" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-details" type="button" role="tab" aria-controls="pokemonFormSections-details" aria-selected="true">宝可梦</button>
 							</li>
 							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="pokemonFormTabs-ribbons" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-ribbons" type="button" role="tab" aria-controls="pokemonFormSections-ribbons">Ribbons</button>
+								<button class="nav-link" id="pokemonFormTabs-ribbons" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-ribbons" type="button" role="tab" aria-controls="pokemonFormSections-ribbons">缎带</button>
 							</li>
 							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="pokemonFormTabs-memories" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-memories" type="button" role="tab" aria-controls="pokemonFormSections-memories">Memories</button>
+								<button class="nav-link" id="pokemonFormTabs-memories" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-memories" type="button" role="tab" aria-controls="pokemonFormSections-memories">回忆</button>
 							</li>
 							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="pokemonFormTabs-notes" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-notes" type="button" role="tab" aria-controls="pokemonFormSections-notes">Notes</button>
+								<button class="nav-link" id="pokemonFormTabs-notes" data-bs-toggle="tab" data-bs-target="#pokemonFormSections-notes" type="button" role="tab" aria-controls="pokemonFormSections-notes">备注</button>
 							</li>
 						</ul>
 						<div class="tab-content p-3 pt-2" id="pokemonFormSections">
@@ -182,7 +182,7 @@
 									<div class="col-8 col-sm-9 col-lg-10">
 										<div class="row g-2">
 											<div class="col-12">
-												<label for="pokemonFormSpecies" class="form-label">Species <span class="form-asterisk">*</span></label>
+												<label for="pokemonFormSpecies" class="form-label">Pokémon(英文搜索) <span class="form-asterisk">*</span></label>
 												<select id="pokemonFormSpecies" class="form-select"></select>
 											</div>
 											<div class="col-lg-6">
@@ -190,17 +190,17 @@
 													<input type="radio" class="btn-check" name="pokemonFormGender" id="pokemonFormGender-male" value="male" checked>
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormGender-male">
 														<img class="align-middle" src="img/ui/gender-male.png" style="height:16px;" alt="Male">
-														<span class="align-middle">Male</span>
+														<span class="align-middle">雄性</span>
 													</label>
 													<input type="radio" class="btn-check" name="pokemonFormGender" id="pokemonFormGender-female" value="female">
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormGender-female">
 														<img class="align-middle" src="img/ui/gender-female.png" style="height:16px;" alt="Female">
-														<span class="align-middle">Female</span>
+														<span class="align-middle">雌性</span>
 													</label>
 													<input type="radio" class="btn-check" name="pokemonFormGender" id="pokemonFormGender-unknown" value="unknown" disabled>
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormGender-unknown">
 														<img class="align-middle" src="img/ui/gender-unknown.png" style="height:16px;" alt="Gender unknown">
-														<span class="align-middle">Gender unknown</span>
+														<span class="align-middle">无性别</span>
 													</label>
 												</div>
 											</div>
@@ -208,17 +208,17 @@
 												<div id="pokemonFormShinyGroup" class="btn-group d-flex align-items-center" role="group" aria-label="Shiny">
 													<input type="radio" class="btn-check" name="pokemonFormShiny" id="pokemonFormShiny-normal" value="" checked>
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormShiny-normal">
-														<span class="align-middle">Normal</span>
+														<span class="align-middle">无</span>
 													</label>
 													<input type="radio" class="btn-check" name="pokemonFormShiny" id="pokemonFormShiny-star" value="star">
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormShiny-star">
 														<img class="align-middle light-invert" src="img/ui/shiny-star.png" style="height:16px;" alt="Star Shiny">
-														<span class="align-middle d-none d-lg-inline" id="pokemonFormShiny-star-labelspecific">Star</span>
+														<span class="align-middle d-none d-lg-inline" id="pokemonFormShiny-star-labelspecific">闪光</span>
 													</label>
 													<input type="radio" class="btn-check" name="pokemonFormShiny" id="pokemonFormShiny-square" value="square">
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormShiny-square">
 														<img class="align-middle light-invert" src="img/ui/shiny-square.svg" style="height:16px;" alt="Square Shiny">
-														<span class="align-middle d-none d-lg-inline">Square</span>
+														<span class="align-middle d-none d-lg-inline">闪光</span>
 													</label>
 													<img class="align-middle ms-2 light-invert" src="img/ui/help.png" style="height:16px;" data-bs-toggle="tooltip" data-bs-html="true" title="Square Shiny Pokémon have a unique animation in <span class='text-nowrap'>Sword/Shield</span>. If the Pokémon is shiny and you're unsure which type, select Star.">
 												</div>
@@ -226,11 +226,11 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<label for="pokemonFormNickname" class="form-label">Nickname</label>
+										<label for="pokemonFormNickname" class="form-label">名称</label>
 										<input type="text" class="form-control" id="pokemonFormNickname" maxlength="12">
 									</div>
 									<div class="col-lg-6">
-										<label for="pokemonFormLanguage" class="form-label">Language <span class="form-asterisk">*</span></label>
+										<label for="pokemonFormLanguage" class="form-label">语言 <span class="form-asterisk">*</span></label>
 										<select class="form-select" id="pokemonFormLanguage" data-minimum-results-for-search="Infinity">
 											<option value="eng">ENG - English</option>
 											<option value="spa">SP-EU/SPA - Español (España)</option>
@@ -246,28 +246,28 @@
 									<div class="col-12 col-lg-6">
 										<div class="row g-2">
 											<div class="col-12">
-												<label for="pokemonFormBall" class="form-label">Poké Ball <span class="form-asterisk">*</span></label>
+												<label for="pokemonFormBall" class="form-label">球种 <span class="form-asterisk">*</span></label>
 												<select class="form-select" id="pokemonFormBall" aria-label="Poké Ball" data-placeholder="">
 													<option value="">&nbsp;</option>
 												</select>
 											</div>
 											<div class="col-12">
 												<label class="form-label">
-													<span class="align-middle">Strange Ball</span>
+													<span class="align-middle">奇异球</span>
 													<img class="align-middle ms-1 light-invert" src="img/ui/help.png" style="height:16px;" data-bs-toggle="tooltip" data-bs-html="true" title="If enabled, the Strange Ball will replace the selected Poké Ball depending on the Current Game. If disabled, the selected Poké Ball will always appear.">
 												</label>
 												<div id="pokemonFormStrangeBallGroup" class="btn-group d-flex align-items-center" role="group" aria-label="Strange Ball">
 													<input type="radio" class="btn-check" name="pokemonFormStrangeBall" id="pokemonFormStrangeBall-global" value="" checked>
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormStrangeBall-global">
-														<span class="align-middle">Global Setting</span>
+														<span class="align-middle">全局设置</span>
 													</label>
 													<input type="radio" class="btn-check" name="pokemonFormStrangeBall" id="pokemonFormStrangeBall-enabled" value="enabled">
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormStrangeBall-enabled">
-														<span class="align-middle">Enabled</span>
+														<span class="align-middle">启动</span>
 													</label>
 													<input type="radio" class="btn-check" name="pokemonFormStrangeBall" id="pokemonFormStrangeBall-disabled" value="disabled">
 													<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormStrangeBall-disabled">
-														<span class="align-middle">Disabled</span>
+														<span class="align-middle">禁用</span>
 													</label>
 												</div>
 											</div>
@@ -276,11 +276,11 @@
 									<div class="col-lg-6">
 										<div class="row g-2">
 											<div class="col-6">
-												<label for="pokemonFormCurrentLevel" class="form-label">Current Level <span class="form-asterisk">*</span></label>
+												<label for="pokemonFormCurrentLevel" class="form-label">等级 <span class="form-asterisk">*</span></label>
 												<input type="number" class="form-control" id="pokemonFormCurrentLevel" min="1" max="100">
 											</div>
 											<div class="col-6">
-												<label for="pokemonFormNature" class="form-label">Nature</label>
+												<label for="pokemonFormNature" class="form-label">性格</label>
 												<select class="form-select" id="pokemonFormNature" aria-label="Nature" data-placeholder="">
 													<option value="">&nbsp;</option>
 												</select>
@@ -290,20 +290,20 @@
 											<div class="col-6">
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" id="pokemonFormShadow">
-													<label class="form-check-label" for="pokemonFormShadow">Shadow (Colo/XD)</label>
+													<label class="form-check-label" for="pokemonFormShadow">黑暗 (Colo/XD)</label>
 												</div>
 											</div>
 											<div class="col-6">
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" id="pokemonFormTotem">
-													<label class="form-check-label" for="pokemonFormTotem">Totem (SM/USUM)</label>
+													<label class="form-check-label" for="pokemonFormTotem">霸主 (SM/USUM)</label>
 												</div>
 											</div>
 											<div class="col-12">
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" id="pokemonFormGMax">
 													<label class="form-check-label" for="pokemonFormGMax">
-														<span>Gigantamax Factor (SwSh)</span>
+														<span>超极巨 (SwSh)</span>
 														<img src="img/ui/gigantamax.png" style="height:16px;" alt="Gigantamax">
 													</label>
 												</div>
@@ -311,33 +311,33 @@
 										</div>
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormTrainerName" class="form-label">Original Trainer</label>
+										<label for="pokemonFormTrainerName" class="form-label">初始训练家</label>
 										<input type="text" class="form-control" id="pokemonFormTrainerName" maxlength="15">
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormTrainerID" class="form-label">ID No.</label>
+										<label for="pokemonFormTrainerID" class="form-label">训练家ID No.</label>
 										<input type="text" class="form-control" id="pokemonFormTrainerID" inputmode="numeric" maxlength="6">
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormOriginMark" class="form-label">Origin Mark <span class="form-asterisk">*</span></label>
+										<label for="pokemonFormOriginMark" class="form-label">地区标 <span class="form-asterisk">*</span></label>
 										<select class="form-select" id="pokemonFormOriginMark" data-placeholder="" data-minimum-results-for-search="Infinity">
 											<option value="">&nbsp;</option>
 										</select>
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormOriginGame" class="form-label">Origin Game</label>
+										<label for="pokemonFormOriginGame" class="form-label">捕捉版本</label>
 										<select class="form-select" id="pokemonFormOriginGame" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true" disabled>
 											<option value="">&nbsp;</option>
 										</select>
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormCurrentGame" class="form-label">Current Game</label>
+										<label for="pokemonFormCurrentGame" class="form-label">当前版本</label>
 										<select class="form-select" id="pokemonFormCurrentGame" data-placeholder="">
 											<option value="">&nbsp;</option>
 										</select>
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormBox" class="form-label">Box</label>
+										<label for="pokemonFormBox" class="form-label">盒子</label>
 										<select class="form-select" id="pokemonFormBox"></select>
 									</div>
 								</div>
@@ -345,9 +345,9 @@
 							<div class="tab-pane fade" id="pokemonFormSections-ribbons" role="tabpanel" aria-labelledby="pokemonFormTabs-ribbons" tabindex="0">
 								<div class="row g-2">
 									<div class="col-lg-6">
-										<label for="pokemonFormTitle" class="form-label">Title</label>
+										<label for="pokemonFormTitle" class="form-label">标记</label>
 										<select class="form-select" id="pokemonFormTitle" data-placeholder="">
-											<option value="None">None</option>
+											<option value="None">目标缎带</option>
 										</select>
 									</div>
 									<div class="col-lg-6">
@@ -370,14 +370,14 @@
 											<label class="btn btn-outline-secondary border-start-0" for="switchRibbonFormViewBtn-list"><img class="align-text-bottom" src="img/ui/expanded.svg" alt="List"></label>
 										</div>
 										<div class="dropdown ms-2 flex-grow-1">
-											<button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toggle all...</button>
+											<button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">全部缎带</button>
 											<ul id="pokemonFormRibbonToggle" class="dropdown-menu dropdown-menu-end">
-												<li><button class="dropdown-item" type="button" data-gen="3">introduced in Gen III</button></li>
-												<li><button class="dropdown-item" type="button" data-gen="4">introduced in Gen IV</button></li>
-												<li><button class="dropdown-item" type="button" data-gen="6">introduced in Gen VI</button></li>
-												<li><button class="dropdown-item" type="button" data-gen="7">introduced in Gen VII</button></li>
-												<li><button class="dropdown-item" type="button" data-gen="8">introduced in Gen VIII</button></li>
-												<li><button class="dropdown-item" type="button" data-gen="9">introduced in Gen IX</button></li>
+												<li><button class="dropdown-item" type="button" data-gen="3">Gen3 引入</button></li>
+												<li><button class="dropdown-item" type="button" data-gen="4">Gen4 引入</button></li>
+												<li><button class="dropdown-item" type="button" data-gen="6">Gen6 引入</button></li>
+												<li><button class="dropdown-item" type="button" data-gen="7">Gen7 引入</button></li>
+												<li><button class="dropdown-item" type="button" data-gen="8">Gen8 引入</button></li>
+												<li><button class="dropdown-item" type="button" data-gen="9">Gen9 引入</button></li>
 											</ul>
 										</div>
 									</div>
@@ -400,7 +400,7 @@
 										<input type="number" class="form-control" id="pokemonFormMetLevel" min="1" max="100">
 									</div>
 									<div class="col-6">
-										<label for="pokemonFormMetDate" class="form-label">Met Date</label>
+										<label for="pokemonFormMetDate" class="form-label">日期</label>
 										<input type="date" class="form-control" id="pokemonFormMetDate">
 									</div>
 									<div class="col-6">
@@ -408,21 +408,21 @@
 										<input type="text" class="form-control" id="pokemonFormMetLocation">
 									</div>
 									<div class="col-6">
-										<div class="form-label">Pokérus</div>
+										<div class="form-label">宝可病毒</div>
 										<div id="pokemonFormPokerusGroup" class="btn-group d-flex align-items-center" role="group" aria-label="Pokerus">
 											<input type="radio" class="btn-check" name="pokemonFormPokerus" id="pokemonFormPokerus-none" value="" checked>
 											<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormPokerus-none">
-												<span class="align-middle">None</span>
+												<span class="align-middle">无</span>
 											</label>
 											<input type="radio" class="btn-check" name="pokemonFormPokerus" id="pokemonFormPokerus-infected" value="infected">
 											<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormPokerus-infected">
 												<img class="align-middle" src="img/ui/pokerus-infected.png" style="height:16px;" alt="Infected">
-												<span class="align-middle d-none d-lg-inline">Infected</span>
+												<span class="align-middle d-none d-lg-inline">感染</span>
 											</label>
 											<input type="radio" class="btn-check" name="pokemonFormPokerus" id="pokemonFormPokerus-cured" value="cured">
 											<label class="btn btn-outline-secondary py-2 px-2 px-lg-3 lh-1" for="pokemonFormPokerus-cured">
 												<img class="align-middle" src="img/ui/pokerus-cured.png" style="height:16px;" alt="Cured">
-												<span class="align-middle d-none d-lg-inline">Cured</span>
+												<span class="align-middle d-none d-lg-inline">免疫</span>
 											</label>
 										</div>
 									</div>
@@ -473,8 +473,8 @@
 						</div>
 					</div>
 					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-primary" id="modalPokemonFormSave">Save</button>
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cancel">Cancel</button>
+						<button type="button" class="btn btn-primary" id="modalPokemonFormSave">确定</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cancel">取消</button>
 					</div>
 				</div>
 			</div>
@@ -484,25 +484,25 @@
 			<div class="modal-dialog modal-lg modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h2 class="modal-title fs-6 fw-bold" id="modalFilterFormLabel">Sort/Filter Pokémon</h2>
+						<h2 class="modal-title fs-6 fw-bold" id="modalFilterFormLabel">宝可梦筛选</h2>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body p-3 pt-2">
 						<div class="row g-2">
 							<div class="col-lg-6">
-								<label for="filterFormSort" class="form-label">Sort</label>
+								<label for="filterFormSort" class="form-label">排序</label>
 								<select id="filterFormSort" class="form-select" data-minimum-results-for-search="Infinity">
 									<option value="default">Default</option>
-									<option value="dexasc">National Pokédex # ▲ (0001-1025)</option>
-									<option value="dexdesc">National Pokédex # ▼ (1025-0001)</option>
-									<option value="levelasc">Current Level ▲ (1-100)</option>
-									<option value="leveldesc">Current Level ▼ (100-1)</option>
-									<option value="nameasc">Name ▲ (A-Z)</option>
-									<option value="namedesc">Name ▼ (Z-A)</option>
+									<option value="dexasc">全国图鉴 # ▲ (0001-1025)</option>
+									<option value="dexdesc">全国图鉴 # ▼ (1025-0001)</option>
+									<option value="levelasc">等级 ▲ (1-100)</option>
+									<option value="leveldesc">等级 ▼ (100-1)</option>
+									<option value="nameasc">名字 ▲ (A-Z)</option>
+									<option value="namedesc">名字 ▼ (Z-A)</option>
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormName" class="form-label">Name/Species/#</label>
+								<label for="filterFormName" class="form-label">名称搜索</label>
 								<input id="filterFormName" class="form-control" type="text" placeholder="">
 							</div>
 							<div class="col-6">
@@ -514,26 +514,26 @@
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormGender" class="form-label">Gender</label>
+								<label for="filterFormGender" class="form-label">性别</label>
 								<select id="filterFormGender" class="form-select" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true">
 									<option value="">&nbsp;</option>
-									<option value="male">Male</option>
-									<option value="female">Female</option>
-									<option value="unknown">Gender unknown</option>
+									<option value="male">雄性</option>
+									<option value="female">雌性</option>
+									<option value="unknown">无性别</option>
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormShiny" class="form-label">Shiny</label>
+								<label for="filterFormShiny" class="form-label">闪光</label>
 								<select id="filterFormShiny" class="form-select" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true">
 									<option value="">&nbsp;</option>
-									<option value="normal">Normal</option>
-									<option value="shiny">Shiny</option>
-									<option value="star">Star</option>
-									<option value="square">Square</option>
+									<option value="normal">无</option>
+									<option value="shiny">闪光</option>
+									<option value="star">星星闪</option>
+									<option value="square">方块闪</option>
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormLanguage" class="form-label">Language</label>
+								<label for="filterFormLanguage" class="form-label">语言</label>
 								<select id="filterFormLanguage" class="form-select" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true">
 									<option value="">&nbsp;</option>
 									<option value="eng">ENG - English</option>
@@ -548,11 +548,11 @@
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormBall" class="form-label">Poké Ball</label>
+								<label for="filterFormBall" class="form-label">球种</label>
 								<select id="filterFormBall" class="form-select" data-placeholder="" data-allow-clear="true"></select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormCurrentLevel-min" class="form-label">Current Level</label>
+								<label for="filterFormCurrentLevel-min" class="form-label">等级</label>
 								<div class="input-group">
 									<input id="filterFormCurrentLevel-min" class="form-control" type="number" min="1" max="100" placeholder="1" aria-label="Minimum Level">
 									<span class="input-group-text">–</span>
@@ -560,33 +560,33 @@
 								</div>
 							</div>
 							<div class="col-6">
-								<label for="filterFormGMax" class="form-label">Gigantamax Factor</label>
+								<label for="filterFormGMax" class="form-label">超级巨化</label>
 								<select id="filterFormGMax" class="form-select" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true">
 									<option value="">&nbsp;</option>
-									<option value="false">No</option>
-									<option value="true">Yes</option>
+									<option value="false">否</option>
+									<option value="true">是</option>
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormPokerus" class="form-label">Pokérus</label>
+								<label for="filterFormPokerus" class="form-label">宝可病毒</label>
 								<select id="filterFormPokerus" class="form-select" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true">
 									<option value="">&nbsp;</option>
-									<option value="none">None</option>
-									<option value="any">Any</option>
-									<option value="infected">Infected</option>
-									<option value="cured">Cured</option>
+									<option value="none">无</option>
+									<option value="any">所有</option>
+									<option value="infected">感染</option>
+									<option value="cured">免疫</option>
 								</select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormOriginMark" class="form-label">Origin Mark</label>
+								<label for="filterFormOriginMark" class="form-label">地区标</label>
 								<select id="filterFormOriginMark" class="form-select" data-placeholder="" data-minimum-results-for-search="Infinity" data-allow-clear="true"></select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormCurrentGame" class="form-label">Current Game</label>
+								<label for="filterFormCurrentGame" class="form-label">当前版本</label>
 								<select id="filterFormCurrentGame" class="form-select" data-placeholder="" data-allow-clear="true"></select>
 							</div>
 							<div class="col-6">
-								<label for="filterFormBox" class="form-label">Box</label>
+								<label for="filterFormBox" class="form-label">盒子</label>
 								<select id="filterFormBox" class="form-select" data-placeholder="" data-allow-clear="true"></select>
 							</div>
 							<div class="col-lg-6">
@@ -607,8 +607,8 @@
 						</div>
 					</div>
 					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-secondary" id="modalFilterFormReset">Reset</button>
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+						<button type="button" class="btn btn-secondary" id="modalFilterFormReset">重置</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">关闭</button>
 					</div>
 				</div>
 			</div>
@@ -618,7 +618,7 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h2 class="modal-title fs-6 fw-bold" id="modalBoxesLabel">Boxes</h2>
+						<h2 class="modal-title fs-6 fw-bold" id="modalBoxesLabel">盒子</h2>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body p-2">
@@ -626,15 +626,15 @@
 							<div class="col-12">
 								<ul id="modalBoxesList" class="list-group">
 									<li id="modalBoxesList-none" class="list-group-item border-0 text-center">
-										<div>You don't have any boxes!</div>
+										<div>您没有任何盒子!</div>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-primary" id="modalBoxesNew">Add New Box</button>
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+						<button type="button" class="btn btn-primary" id="modalBoxesNew">添加盒子</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">关闭</button>
 					</div>
 				</div>
 			</div>
@@ -644,7 +644,7 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h2 class="modal-title fs-6 fw-bold" id="modalRibbonChecklistLabel">Ribbon Checklist</h2>
+						<h2 class="modal-title fs-6 fw-bold" id="modalRibbonChecklistLabel">缎带收集清单</h2>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body p-0">
@@ -663,7 +663,7 @@
 						</div>
 					</div>
 					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">关闭</button>
 					</div>
 				</div>
 			</div>
@@ -673,13 +673,13 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h2 class="modal-title fs-6 fw-bold" id="modalSettingsLabel">Settings</h2>
+						<h2 class="modal-title fs-6 fw-bold" id="modalSettingsLabel">设置</h2>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body px-2 px-sm-3">
 						<form>
 							<div class="mb-2">
-								<label class="form-label" for="settingsTheme">Theme</label>
+								<label class="form-label" for="settingsTheme">主题</label>
 								<select class="form-select" id="settingsTheme" aria-label="Theme selection" data-minimum-results-for-search="Infinity">
 									<option value="auto" selected>Automatic (Simple Dark/Simple Light)</option>
 									<optgroup label="Dark">
@@ -697,7 +697,7 @@
 							</div>
 							<div class="mb-2">
 								<label class="form-label" for="settingsLanguage">
-									<span class="align-middle">Language</span>
+									<span class="align-middle">语言</span>
 									<img class="align-middle ms-1 light-invert" src="img/ui/help.png" style="height:16px;" data-bs-toggle="tooltip" title="Changing this setting will reload the page.">
 								</label>
 								<select class="form-select" id="settingsLanguage" aria-label="Language selection" data-minimum-results-for-search="Infinity">
@@ -806,7 +806,7 @@
 						</form>
 					</div>
 					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">关闭</button>
 					</div>
 				</div>
 			</div>
@@ -863,22 +863,22 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h2 class="modal-title fs-6 fw-bold" id="modalDataLabel">Data Management</h2>
+						<h2 class="modal-title fs-6 fw-bold" id="modalDataLabel">数据备份</h2>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<p class="fw-bold">Last Modified</p>
+						<p class="fw-bold">上次修改时间</p>
 						<p id="modalDataLastModified">Unknown</p>
 						<hr>
-						<p id="modalDataLocal" class="fw-bold">Local Backup</p>
+						<p id="modalDataLocal" class="fw-bold">本地备份</p>
 						<div class="btn-group" role="group" aria-labelledby="modalDataLocal">
-							<button type="button" class="btn btn-primary btn-sm" id="modalDataSaveBackup">Save Backup File</button>
-							<button type="button" class="btn btn-outline-primary btn-sm ms-1" id="modalDataLoadBackupButton">Restore Backup File</button>
+							<button type="button" class="btn btn-primary btn-sm" id="modalDataSaveBackup">保存备份</button>
+							<button type="button" class="btn btn-outline-primary btn-sm ms-1" id="modalDataLoadBackupButton">恢复备份</button>
 						</div>
 						<input type="file" id="modalDataLoadBackupFile" accept="application/json" hidden>
 					</div>
 					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">关闭</button>
 					</div>
 				</div>
 			</div>
