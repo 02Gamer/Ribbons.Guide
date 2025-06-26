@@ -347,7 +347,7 @@ function loadBackup(file, filename){
 		var contents = e.target.result;
 		var proceed = false;
 		if(localStorage.pokemon || localStorage.boxes){
-			if(confirm("Are you sure you want to replace all of the current data with " + filename + "? You can't reverse this decision!")){
+			if(confirm("确定要用 【" + filename + "】 替换所有当前数据吗？此操作无法撤销！")){
 				proceed = true;
 			}
 		} else {
@@ -1315,7 +1315,7 @@ function createCard(p, id){
 		$cardRibbons.append($ribbonBtn);
 	}
 	if(ribbonCount == 0 && markCount == 0){
-		$cardRibbons.append($("<div>", { "class": "ms-2" }).text("This Pokémon has no ribbons."));
+		$cardRibbons.append($("<div>", { "class": "ms-2" }).text("请开始你的缎带旅行！"));
 	}
 	if(!p.ribbons.includes("battle-memory-ribbon") && !p.ribbons.includes("battle-memory-ribbon-gold") && battleMemories.length && currentGen >= 6){
 		if(p.currentgame === "scar" || p.currentgame === "vio" || p.currentgame === "home"){
@@ -2745,7 +2745,7 @@ $(function(){
 	modalPokemonForm = new bootstrap.Modal("#modalPokemonForm");
 	$("#modalPokemonForm").on("hide.bs.modal", function(e){
 		if(modalPokemonState !== "saving"){
-			if(!confirm("Are you sure you wish to cancel? All of your changes will be lost!")){
+			if(!confirm("确定要取消吗？您的所有更改都将丢失！")){
 				e.preventDefault();
 			}
 		}
