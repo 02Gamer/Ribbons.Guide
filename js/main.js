@@ -874,7 +874,7 @@ function copyPokemon(){
 	var cardContainer = $(event.target).parents(".col");
 	var pokemonID = Number(cardContainer[0].dataset.pokemonId);
 	var pokemonName = cardContainer.find(".card-header-name").text();
-	if(confirm("Are you sure you want to create a copy of " + pokemonName + "?")){
+	if(confirm("确定复制一份 【" + pokemonName + "】 数据?")){
 		var pokemonToCopy = userPokemon[pokemonID];
 		userPokemon.splice(pokemonID, 0, pokemonToCopy);
 		localStorage.pokemon = JSON.stringify(userPokemon);
@@ -893,7 +893,7 @@ function deletePokemon(){
 	var cardContainer = $(event.target).parents(".col");
 	var pokemonID = Number(cardContainer[0].dataset.pokemonId);
 	var pokemonName = cardContainer[0].dataset.name;
-	if(confirm("Are you sure you want to delete " + pokemonName + "? This is permanent!")){
+	if(confirm("确定删除 【" + pokemonName + "】？")){
 		cardContainer.fadeOut(250, function(){
 			$(this).remove();
 		});
@@ -1973,9 +1973,9 @@ function populateBoxes(){
 function createOrEditBox(edit = null, editID = -1){
 	var boxName;
 	if(edit){
-		boxName = prompt("Change box name:", edit);
+		boxName = prompt("修改盒子名称:", edit);
 	} else {
-		boxName = prompt("Add a new box:");
+		boxName = prompt("添加盒子:");
 	}
 	if(boxName){
 		if(edit){
@@ -2013,7 +2013,7 @@ function editBox(){
 function deleteBox(){
 	var listContainer = $(event.target).parents(".list-group-item");
 	var boxID = listContainer.index() - 1;
-	if(confirm("Are you sure you want to delete " + userBoxes[boxID] + "? All of the Pokémon in " + userBoxes[boxID] + " will become unsorted.")){
+	if(confirm("确定要删除 【" + userBoxes[boxID] + "】？ 当前 【" + userBoxes[boxID] + "】 内的所有宝可梦将变为未分类状态！")){
 		listContainer.fadeOut(250, function(){
 			$(this).remove();
 		});
