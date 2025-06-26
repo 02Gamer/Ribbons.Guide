@@ -1469,7 +1469,7 @@ function resetPokemonForm(edit = false){
 	if(edit){
 		$("#modalPokemonFormLabel").text("Edit Pokémon");
 	} else {
-		$("#modalPokemonFormLabel").text("Add New Pokémon");
+		$("#modalPokemonFormLabel").text("添加宝可梦");
 	}
 	$("#pokemonFormTabs-details").click();
 	$("#modalPokemonForm input").each(function(){
