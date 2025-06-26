@@ -2064,7 +2064,7 @@ function initRun(){
 
 	/* data load */
 	loadingBar(10);
-	$("#loading-spinner-info-text").text("Loading data");
+	$("#loading-spinner-info-text").text("正在加载数据");
 	$.when(
 		$.getJSON("./data/balls.json"),
 		$.getJSON("./data/changelog.json"),
@@ -2653,7 +2653,7 @@ function initRun(){
 
 		/* image check */
 		loadingBar(25);
-		$("#loading-spinner-info-text").text("Loading images");
+		$("#loading-spinner-info-text").text("正在加载图片");
 		/* thanks to Sean C Davis */
 		/* https://www.seancdavis.com/posts/wait-until-all-images-loaded/ */
 		var imagesLoaded = 0;
