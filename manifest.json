@@ -21,7 +21,7 @@
 	"scope": "https://ribbons.guide",
 	"display": "standalone",
 	"dir": "ltr",
-	"lang": "zh-Hans",
+	"lang": "en",
 	"description": "Keep track of your Pokémon and their Ribbons using Ribbons.Guide!",
 	"categories": [
 		"games",
