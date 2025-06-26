@@ -1467,7 +1467,7 @@ function presetSettings(change = false){
 function resetPokemonForm(edit = false){
 	setFormValidAll();
 	if(edit){
-		$("#modalPokemonFormLabel").text("Edit Pokémon");
+		$("#modalPokemonFormLabel").text("编辑宝可梦");
 	} else {
 		$("#modalPokemonFormLabel").text("添加宝可梦");
 	}
