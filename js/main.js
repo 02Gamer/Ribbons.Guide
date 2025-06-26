@@ -75,7 +75,7 @@ if(settings.theme){
 }
 
 /* change site language */
-var supportedLanguages = ["zh-Hant"];
+var supportedLanguages = ["en"];
 function changeLanguage(l){
 	changeSetting("language", l)
 	$("html").attr("lang", l);
