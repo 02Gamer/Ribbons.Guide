@@ -2745,7 +2745,7 @@ $(function(){
 	modalPokemonForm = new bootstrap.Modal("#modalPokemonForm");
 	$("#modalPokemonForm").on("hide.bs.modal", function(e){
 		if(modalPokemonState !== "saving"){
-			if(!confirm("确定要取消吗？您的所有更改都将丢失！")){
+			if(!confirm("确定要取消吗？您所更改的内容将不保存！")){
 				e.preventDefault();
 			}
 		}
